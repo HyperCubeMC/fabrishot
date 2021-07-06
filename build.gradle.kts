@@ -1,10 +1,10 @@
 plugins {
-    id("fabric-loom") version "0.8.17"
+    id("fabric-loom") version "0.8-SNAPSHOT"
     id("org.cadixdev.licenser") version "0.6.0"
 }
 
 group = "me.ramidzkh"
-version = "1.5.0"
+version = "1.5.1"
 
 repositories {
     maven {
@@ -19,11 +19,11 @@ repositories {
 }
 
 dependencies {
-    minecraft("net.minecraft", "minecraft", "1.17")
-    mappings("net.fabricmc", "yarn", "1.17+build.7", classifier = "v2")
-    modImplementation("net.fabricmc", "fabric-loader", "0.11.3")
+    minecraft("net.minecraft", "minecraft", "1.17.1")
+    mappings("net.fabricmc", "yarn", "1.17.1+build.1", classifier = "v2")
+    modImplementation("net.fabricmc", "fabric-loader", "0.11.6")
 
-    modImplementation("net.fabricmc.fabric-api", "fabric-api", "0.35.0+1.17")
+    modImplementation("net.fabricmc.fabric-api", "fabric-api", "0.36.1+1.17")
     modImplementation("com.terraformersmc", "modmenu", "2.0.0-beta.7")
     modImplementation("me.shedaniel.cloth", "cloth-config-fabric", "5.0.34")
 }
